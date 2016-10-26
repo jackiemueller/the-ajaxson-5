@@ -75,7 +75,7 @@ function fetchAndDisplayGif(event) {
     // TODO
     // give the user a "Loading..." message while they wait
     setGifLoadedStatus(false);
-    $("#feedback").html("<p>Loading...</p>");
+    $("#feedback").html("<i class='fa fa-refresh fa-spin fa-3x fa-fw'></i><strong>Loading...</strong>");
 
 }
 
