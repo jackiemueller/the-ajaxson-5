@@ -44,6 +44,7 @@ function fetchAndDisplayGif(event) {
 
     // make an ajax request for a random GIF
     $.ajax({
+        dataType: 'jsonp',
         url: "http://api.giphy.com/v1/gifs/random", // TODO where should this request be sent?
         data: params,                               // attach those extra parameters onto the request
         success: function(response) {
